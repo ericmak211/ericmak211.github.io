@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Pokémon</title>
+    <style>
+        /* Hide all sections initially */
+        .section {
+            display: none;
+        }
+        /* Show only the active section */
+        .active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Main Title -->
+    <h1>Welcome to the World of Pokémon</h1>
+
+    <!-- Navigation Links -->
+    <ul>
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('types')">Pokémon Types</a></li>
+        <li><a href="#" onclick="showSection('famous')">Famous Pokémon</a></li>
+        <li><a href="#" onclick="showSection('games')">Pokémon Games</a></li>
+        <li><a href="#" onclick="showSection('training')">Training Tips</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+    </ul>
+
+    <!-- Home Section -->
+    <div id="home" class="section active">
+        <h2>Home</h2>
+        <p>Pokémon is a beloved franchise that has captured the hearts of fans worldwide. From the original 151 Pokémon to over 800 species today, it continues to grow and evolve. One of the most famous Pokémon is <strong>Pikachu</strong>, the electric-type mascot of the series. If you're new to Pokémon, you can learn more about it <a href="https://www.pokemon.com/us/pokemon-video-games/">here</a>.</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Picture of Pikachu">
+    </div>
+
+    <!-- Pokémon Types Section -->
+    <div id="types" class="section">
+        <h2>Pokémon Types</h2>
+        <p>Pokémon are categorized into different types such as Fire, Water, Grass, Electric, Psychic, and more. Each type has its strengths and weaknesses, making battles strategic and exciting.</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="Charizard - Fire Type Pokémon">
+    </div>
+
+    <!-- Famous Pokémon Section -->
+    <div id="famous" class="section">
+        <h2>Famous Pokémon</h2>
+        <p>Some of the most famous Pokémon include <strong>Pikachu</strong>, <strong>Charizard</strong>, <strong>Mewtwo</strong>, and <strong>Jigglypuff</strong>. These Pokémon have become icons of the franchise and are loved by fans around the world.</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png" alt="Mewtwo - Legendary Pokémon">
+    </div>
+
+    <!-- Pokémon Games Section -->
+    <div id="games" class="section">
+        <h2>Pokémon Games</h2>
+        <p>Pokémon has a rich history in video games, from the classic Game Boy titles like <strong>Pokémon Red and Blue</strong> to the latest Nintendo Switch games like <strong>Pokémon Sword and Shield</strong>. Each game brings new adventures and Pokémon to discover.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/39/Pok%C3%A9mon_Red_and_Blue_cover_art.png/220px-Pok%C3%A9mon_Red_and_Blue_cover_art.png" alt="Pokémon Red and Blue Cover">
+    </div>
+
+    <!-- Training Tips Section -->
+    <div id="training" class="section">
+        <h2>Training Tips</h2>
+        <p>To become a Pokémon Master, you'll need to train your Pokémon effectively. Here are some tips:</p>
+        <ul>
+            <li>Focus on type matchups during battles.</li>
+            <li>Use items like Potions and Revives wisely.</li>
+            <li>Keep your team balanced with different types.</li>
+        </ul>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png" alt="Venusaur - Grass/Poison Type Pokémon">
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or just want to share your love for Pokémon, feel free to reach out!</p>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur - Grass/Poison Type Pokémon">
+    </div>
+
+</body>
+</html>
